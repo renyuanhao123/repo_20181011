@@ -11,6 +11,7 @@ git init 为本地工作区初始化出一个暂存区（stage）
 * git add & git commit 做的是移动的操作,移动的是以文件为载体的修改。
 git add : 本地工作区->暂存区（stage）
 git commit : 暂存区 ->当前分支（master）
+要想commit, 必先add
 
 * 版本管理，即不同版本（或称分支）的切换
 git log 可查看各版本详情，版本用id唯一标识。其中HEAD所指为当前分支
