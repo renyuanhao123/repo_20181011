@@ -52,7 +52,7 @@ git rm text.txt
 * 连接远程库并push
 	连接: git remote add orgin https://github.com/renyuanhao123/repo_20181011.git  # 远程库名为orgin
 	push: git push -u orgin master  # 将本地master推送到orgin
-	
+* 从远程工作库clone git clone https://github.com/renyuanhao123/repo_for_clone.git	
 
 Q:
 	$ git remote add orgin https://github.com/renyuanhao123/repo_20181011.git
