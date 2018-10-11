@@ -28,7 +28,8 @@ git diff 'file.txt'  # 指定某个文件的变更详情
 * 删除与撤销修改
 git rm
 git checkout
-
+			-- file  # 撤销修改
+			- another branch  # 切换到另外一个分支
 
 
 
