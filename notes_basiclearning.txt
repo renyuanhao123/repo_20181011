@@ -3,10 +3,12 @@ git is free software
 
 git has a mutable index called stage
 
+git control changes not files, that's why its better.
+
 * 三个位置：本地工作区、暂存区（stage）、当前分支（master）
 git init 为本地工作区初始化出一个暂存区（stage）
 
-* git add & git commit 做的是移动的操作
+* git add & git commit 做的是移动的操作,移动的是以文件为载体的修改。
 git add : 本地工作区->暂存区（stage）
 git commit : 暂存区 ->当前分支（master）
 
@@ -16,4 +18,14 @@ git reset
 			--hard HEAD~n  # 相对定位，n表示当前版本之前的第n个版本
 			--hard commit_id  # 绝对定位，commit_id为版本号
 			
-git reflog 可查看所有的命令
+git reflog 可查看所有的命令，命令中会包含版本id
+
+* 删除与撤销修改
+git rm
+git checkout
+
+
+
+
+有一句不明白： create mode 100644 notes_basiclearning.txt
+这个mode是啥，是在做了commit之后返回的，这个commit内容是增加了一个新文件‘notes_basiclearning.txt’
