@@ -41,5 +41,7 @@ git rm text.txt
 撤销删除
 	git checkout -- test.txt
 
+* git checkout 即用版本库中版本替换工作区中版本，删除、修改都可一键还原	
+	
 有一句不明白： create mode 100644 notes_basiclearning.txt
 这个mode是啥，是在做了commit之后返回的，这个commit内容是增加了一个新文件‘notes_basiclearning.txt’
