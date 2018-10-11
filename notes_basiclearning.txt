@@ -18,7 +18,7 @@ git log 可查看各版本详情，版本用id唯一标识。其中HEAD所指为
 git reset 
 			--hard HEAD~n  # 相对定位，n表示当前版本之前的第n个版本
 			--hard commit_id  # 绝对定位，commit_id为版本号
-			
+			HEAD file  # 撤销暂存区的修改，将修改从暂存区回撤到工作区
 git reflog 可查看所有的命令，命令中会包含版本id
 
 * 查看工作区状态和文件的内容变动
@@ -28,7 +28,7 @@ git diff 'file.txt'  # 指定某个文件的变更详情
 * 删除与撤销修改
 git rm
 git checkout
-			-- file  # 撤销修改
+			-- file  # 撤销工作区的修改
 			- another branch  # 切换到另外一个分支
 
 
