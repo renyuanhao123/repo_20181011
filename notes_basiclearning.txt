@@ -25,12 +25,14 @@ git reflog 可查看所有的命令，命令中会包含版本id
 git status  # 返回工作区的变动情况
 git diff 'file.txt'  # 指定某个文件的变更详情
 
-* 删除与撤销修改
-git rm
-git checkout
+*git checkout
 			-- file  # 撤销工作区的修改
 			- another branch  # 切换到另外一个分支
 
+* 撤销三连
+1. 撤销工作区的变更 git reset HEAD file
+2. 撤销暂存区的修改，将修改从暂存区回撤到工作区 git checkout -- file
+3. 撤销提交到master的修改，git reset --hard HEAD~n  或 git reset commit_id 
 
 
 有一句不明白： create mode 100644 notes_basiclearning.txt
