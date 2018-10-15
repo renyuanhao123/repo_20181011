@@ -65,10 +65,11 @@ A:当前目录非工作区，cd到工作区即可
 	查看- git branch  # 返回当前分支结构，当前分支以*标识
 
 * 合并分支branch2到当前分支
-	git merge branch2
+	git merge branch2  # 默认为fastforward模式，该模式在删除分支后，会丢掉分支信息（？？），git merge --no-ff -m 'merge with no-ff' dev即可以非ff模式合并,该模式会在merge时生成一个新的commit，然后git log --graph查看分支历史时可看到分支信息
 * 删除分支- git branch -d new_branch
 
 使用逻辑：
+	master分支稳定不变，仅用来发布版本，修改在dev们上做，修改后提交并合并到master
 	创建并切换到子分支进行修改 git branch -b branch_child
 	提交修改到子分支 git add xxx.txt git commit -m ''
 	切换到主分支 qit branch master
@@ -80,4 +81,5 @@ A:当前目录非工作区，cd到工作区即可
 Q: cannot do a partial commit during a merge
 A: commit时不要指定文件，直接提交即可
 
-modify on dev
+
+
