@@ -93,3 +93,11 @@ git pull # 从remote仓库拉取内容
 git remote -v # 查看远程库信息
 
 git rebase #?????
+
+* tag,类似于commit的名字，比commit_id更有可读性
+	git tag # 返回tag list，按字母序排
+	git tag tag_name (commit_id)  # 对指定commit加标签,不指定commit_id的话默认加到最新的一次commit上
+	git show tag_name # 返回标签对应的commit的详情
+	git tag -d tag_name  # 删除标签
+	git push orgin tag_name  # 推送某个标签到远程，--tags表示推送所有标签
+	git push orgin :refs/tags/tag_name  # 删除标签
