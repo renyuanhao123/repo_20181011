@@ -51,6 +51,7 @@ git rm text.txt
 * 连接远程库并push
 	连接: git remote add orgin https://github.com/renyuanhao123/repo_20181011.git  # 远程库名为orgin
 	push: git push -u orgin master  # 将本地master推送到orgin
+	pull: 从远程抓取分支，有冲突的话需要先处理
 * 从远程工作库clone git clone https://github.com/renyuanhao123/repo_for_clone.git	
 
 Q:
@@ -87,3 +88,6 @@ A: commit时不要指定文件，直接提交即可
 	git stash drop  # 删除stash
 	git stash pop = git stash apply + git stash drop
 
+git pull # 从remote仓库拉取内容
+
+git remote -v # 查看远程库信息
