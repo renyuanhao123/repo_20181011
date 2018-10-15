@@ -75,6 +75,4 @@ A:当前目录非工作区，cd到工作区即可
 	合并子分支到主分支 git merge branch_child
 	删除子分支 git branch -d branch_child
 
-合并冲突- 手动解决冲突，然后再合并
-
-modify on master branch
+合并冲突- 手动解决冲突，然后hebing
