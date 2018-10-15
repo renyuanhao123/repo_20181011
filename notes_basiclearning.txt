@@ -56,18 +56,24 @@ git rm text.txt
 Q:
 	$ git remote add orgin https://github.com/renyuanhao123/repo_20181011.git
 	fatal: not a git repository (or any of the parent directories): .git
-A:
-
+A:当前目录非工作区，cd到工作区即可
+	
+	
 * 创建、切换、查看分支
 	创建- git branch new_branch
 	切换- git checkout new_branch  # 这两句等价于 git checkout -b new_branch
 	查看- git branch  # 返回当前分支结构，当前分支以*标识
 
+* 合并分支branch2到当前分支
+	git merge branch2
+* 删除分支- git branch -d new_branch
+
+使用逻辑：
+	创建并切换到子分支进行修改 git branch -b branch_child
+	提交修改到子分支 git add xxx.txt git commit -m ''
+	切换到主分支 qit branch master
+	合并子分支到主分支 git merge branch_child
+	删除子分支 git branch -d branch_child
 
 
 
-
-
-
-
-	当前目录非工作区，cd到工作区即可
