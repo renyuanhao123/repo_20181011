@@ -79,3 +79,5 @@ A:当前目录非工作区，cd到工作区即可
 
 Q: cannot do a partial commit during a merge
 A: commit时不要指定文件，直接提交即可
+
+modify on dev
