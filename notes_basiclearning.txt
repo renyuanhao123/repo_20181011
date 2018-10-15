@@ -1,4 +1,4 @@
-git is a distributed version control system
+﻿git is a distributed version control system
 git is free software
 
 git has a mutable index called stage
@@ -46,7 +46,6 @@ git rm text.txt
 有一句不明白： create mode 100644 notes_basiclearning.txt
 这个mode是啥，是在做了commit之后返回的，这个commit内容是增加了一个新文件‘notes_basiclearning.txt’
 
-
 * 远程仓库-github
 * SSH key 供远程仓库来确认身份
 * 连接远程库并push
@@ -58,4 +57,17 @@ Q:
 	$ git remote add orgin https://github.com/renyuanhao123/repo_20181011.git
 	fatal: not a git repository (or any of the parent directories): .git
 A:
+
+* 创建、切换、查看分支
+	创建- git branch new_branch
+	切换- git checkout new_branch  # 这两句等价于 git checkout -b new_branch
+	查看- git branch  # 返回当前分支结构，当前分支以*标识
+
+
+
+
+
+
+
+
 	当前目录非工作区，cd到工作区即可
