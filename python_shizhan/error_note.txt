@@ -1,0 +1,7 @@
+Q: could not find a version that satisfies the requirement aiohttp
+A:切换pip安装的镜像源为国内地址，方法有两种:
+	安装时临时修改 pip install package_name -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+	写在配置文件中，在当前%HOMEPATH%\pip\.pip文件夹，该目录下创建pip.conf,内容为 [global]\ntrusted-host=mirrors.aliyun.com\ninde-url=http://mirrors.aliyun.com/pypi/simple/
+
+Q: pip install jinjija2
+A: 官网下载压缩包，解压，python setup.py install 即可
